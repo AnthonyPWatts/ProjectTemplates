@@ -1,5 +1,5 @@
 # ProjectTemplates
- Better project templates
+## Better project templates
 
 Leaning heavily on a [Microsoft Visual Studio channel post on YouTube](https://www.youtube.com/watch?v=GDNcxU0_OuE&ab_channel=MicrosoftVisualStudio).
 
