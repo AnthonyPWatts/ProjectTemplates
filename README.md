@@ -1,5 +1,7 @@
 # Better project templates
 
+![example workflow](https://github.com/AnthonyPWatts/ProjectTemplates/actions/workflows/dotnet.yml/badge.svg)
+
 Leaning heavily on a [YouTube walkthrough](https://www.youtube.com/watch?v=GDNcxU0_OuE&ab_channel=MicrosoftVisualStudio) by [Sayed Hashimi (Senior Program Manager at Microsoft)](https://github.com/sayedihashimi), and the [supporting GitHub repo](https://github.com/sayedihashimi/template-sample) for templating and publishing steps.
 
 ## Templates
