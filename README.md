@@ -6,7 +6,7 @@ Leaning heavily on a [YouTube walkthrough](https://www.youtube.com/watch?v=GDNcx
 
 ## Templates
 ### [AnthonyPWatts.Templates.MVC](https://www.nuget.org/packages/AnthonyPWatts.Templates.MVC)
-#### [Nuget Status](https://img.shields.io/nuget/v/AnthonyPWatts.Templates.MVC.svg) ASP.NET Core 3.1 Web App with Swagger and Serilog 
+#### ![Nuget Status](https://img.shields.io/nuget/v/AnthonyPWatts.Templates.MVC.svg) ASP.NET Core 3.1 Web App with Swagger and Serilog 
 Microsoft's ASP.NET MVC Core 3.1 Web App template, with:
 * Swagger already wired up
 * Serilog hooked up at Program.cs level, pulling config from appsettings
