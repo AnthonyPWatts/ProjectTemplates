@@ -12,5 +12,5 @@ Microsoft's ASP.NET MVC Core 3.1 Web App template, with:
 * Serilog hooked up at Program.cs level, pulling config from appsettings
 * Production configured for ApplicationInsights
 * appsettings.development.json set up for local logging to Console, RollingFile and SEQ
-##### ASP.NET Core 3.1 Web API with swagger and Serilog
-* As the ASP.NET Core 3.1 Web App template above, with front end libraries etc. removed for a leaner package 
+#### ASP.NET Core 3.1 Web API with swagger and Serilog
+As the ASP.NET Core 3.1 Web App template above, with front end libraries etc. removed for a leaner package 
