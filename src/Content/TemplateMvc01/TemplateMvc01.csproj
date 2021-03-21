@@ -35,4 +35,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include=".template.config\template.json" />
+  </ItemGroup>
+
 </Project>

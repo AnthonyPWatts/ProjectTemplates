@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/template",
+  "author": "Anthony P Watts",
+  "classifications": ["Web", "WebAPI", "Custom"],
+  "name": "Tony's Serilogged and Swaggered API App",
+  "defaultName": "APISite",
+  "identity": "anthonypwatts.templates.web.api",
+  "shortName": "apwApi",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "TemplateApi01"
+}

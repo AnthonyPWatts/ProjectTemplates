@@ -8,15 +8,16 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Serilog;
 
-namespace TemplateMvc01
+namespace TemplateApi01
 {
     /// <summary>
-    /// Web Startup
+    /// MVC Startup
     /// </summary>
     public class Startup
     {
         /// <summary>
-        /// Startup
+        ///
+        /// Constructor
         /// </summary>
         /// <param name="configuration">Injected</param>
         public Startup(IConfiguration configuration)
@@ -24,10 +25,10 @@ namespace TemplateMvc01
             Configuration = configuration;
         }
 
-        // ReSharper disable once MemberCanBePrivate.Global
         /// <summary>
-        /// Configuration. Public for test rigs
+        /// Configuration. Public to allow for use in Controller testing frameworks
         /// </summary>
+        // ReSharper disable once MemberCanBePrivate.Global
         // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public IConfiguration Configuration { get; }
 
@@ -35,7 +36,7 @@ namespace TemplateMvc01
         /// <summary>
         /// ConfigureServices
         /// </summary>
-        /// <param name="services">Injected</param>
+        /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
@@ -44,8 +45,8 @@ namespace TemplateMvc01
 
             services.AddSwaggerGen(c =>
             {
-                c.IncludeXmlComments($@"{AppDomain.CurrentDomain.BaseDirectory}\TemplateMvc01.xml");
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "TemplateMvc01API", Version = "v1" });
+                c.IncludeXmlComments($@"{AppDomain.CurrentDomain.BaseDirectory}\TemplateApi01.xml");
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "TemplateApi01API", Version = "v1" });
             });
 
             #endregion
@@ -94,7 +95,7 @@ namespace TemplateMvc01
             #region Swagger
             
             app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("v1/swagger.json", "TemplateMvc01 API v1"));
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("v1/swagger.json", "TemplateApi01 API v1"));
 
             #endregion
             

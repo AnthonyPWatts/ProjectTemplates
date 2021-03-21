@@ -4,15 +4,15 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 
-namespace TemplateMvc01
+namespace TemplateApi01
 {
     /// <summary>
-    /// Program class
+    /// Standard entry point
     /// </summary>
     public class Program
     {
         /// <summary>
-        /// Main entry point
+        /// Startup method
         /// </summary>
         /// <param name="args"></param>
         public static void Main(string[] args)
@@ -37,16 +37,16 @@ namespace TemplateMvc01
 
             try
             {
-                Log.Information("TemplateMvc01 starting up");
+                Log.Information("TemplateApi01 starting up");
                 CreateHostBuilder(args).Build().Run();
             }
             catch (Exception ex)
             {
-                Log.Fatal(ex, "TemplateMvc01 failed");
+                Log.Fatal(ex, "TemplateApi01 failed");
             }
             finally
             {
-                Log.Information("TemplateMvc01 shutting down");
+                Log.Information("TemplateApi01 shutting down");
                 Log.CloseAndFlush();
             }
         }

@@ -1,10 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/template",
   "author": "Anthony P Watts",
-  "classifications": ["Web", "MVC"],
+  "classifications": ["Web", "MVC", "Custom"],
   "name": "Tony's Serilogged and Swaggered MVC App",
   "defaultName": "Website",
-  "identity": "anthonypwatts.templates.mvc",
+  "identity": "anthonypwatts.templates.web.mvc",
   "shortName": "apwMvc",
   "tags": {
     "language": "C#",
