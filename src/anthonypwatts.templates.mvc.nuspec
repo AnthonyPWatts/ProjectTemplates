@@ -2,9 +2,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>AnthonyPWatts.Templates.MVC</id>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
         <authors>Anthony P. Watts</authors>
-        <description>ASP.NET MVC Core 3.1 Project Template with Swagger and Serilog hooked up</description>
+        <description>ASP.NET MVC Core 3.1 Project Templates</description>
         <license type="expression">Apache-2.0</license>
         <packageTypes>
             <packageType name="Template" />
@@ -12,8 +12,8 @@
     </metadata>
     <files>
         <file
-            src="Content\TemplateMvc01\**\*.*"
-            exclude="Content\TemplateMvc01\bin\**\*.*;Content\TemplateMvc01\obj\**\*.*"
-            target="Content\TemplateMvc01" />
+            src="Content\**\*.*"
+            exclude="Content\**\bin\**\*.*;Content\**\obj\**\*.*"
+            target="Content" />
     </files>
 </package>

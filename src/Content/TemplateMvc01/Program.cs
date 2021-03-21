@@ -14,10 +14,19 @@ namespace TemplateMvc01
     {
         public static void Main(string[] args)
         {
+            var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+
             var config = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json")
-                .AddJsonFile("appsettings.development.json", optional: true)
                 .Build();
+
+            if (!string.IsNullOrWhiteSpace((environment)) && environment == "Development")
+            {
+                config = new ConfigurationBuilder()
+                    .AddJsonFile("appsettings.json")
+                    .AddJsonFile("appsettings.development.json", optional: true)
+                    .Build();
+            }
 
             Log.Logger = new LoggerConfiguration()
                 .ReadFrom.Configuration(config)

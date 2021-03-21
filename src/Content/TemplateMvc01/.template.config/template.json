@@ -5,7 +5,7 @@
   "name": "Tony's Serilogged and Swaggered MVC App",
   "defaultName": "Website",
   "identity": "anthonypwatts.templates.mvc",
-  "shortName": "apwHookedUpMvc",
+  "shortName": "apwMvc",
   "tags": {
     "language": "C#",
     "type": "project"
